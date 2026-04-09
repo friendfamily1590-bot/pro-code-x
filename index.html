@@ -2490,7 +2490,7 @@
                 </div>
             </div>
             <div>
-                <div class="hero-badge">⚡ 2026 Portfolio Experience</div>
+                <div class="hero-badge">⚡ Portfolio Experience</div>
                 <h1 class="hero-name"><span class="gr">XALIF</span></h1>
                 <div class="hero-role"><span id="type-text"></span><span class="cur2"></span></div>
                 <p class="hero-desc">
@@ -2995,7 +2995,7 @@
             </div>
         </div>
         <div class="ft-bot">
-            <p>© <span>2026 XALIF</span>. All rights reserved.</p>
+            <p>© <span><span id="year"></span> XALIF</span>. All rights reserved.</p>
             <div class="ft-made">
                 Made with <span class="heart">❤</span> by ABDULLHA &amp;
                 <span style="color: var(--blue2); font-weight: 700">&lt;/&gt; XALIF</span>
@@ -3004,6 +3004,7 @@
     </footer>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
         function removeButtonHighlight() {
             document.querySelectorAll("button, a, .btn").forEach((el) => {
                 el.style.webkitTapHighlightColor = "transparent";
